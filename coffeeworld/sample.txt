@@ -1,0 +1,4 @@
+user1 : 100
+user2 : 80
+user3 : 60
+user4 : 75

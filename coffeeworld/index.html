@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The one stop for coffee Lovers</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <link rel= "stylesheet" type ="text/css" href = "css/dropdown.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+
+    <div class="brand">Cold Stone Coffee</div>
+    <div class="address-bar">485 Hilton Valley | Oakland, CA 95345 | 408.564.3664</div>
+   
+
+                        
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Cold Stone Coffee</a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="News.html">News</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact_details.php">Contact</a>
+                    </li>
+                     <li>
+                        <a href="index1.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="products_10.html">Products</a>
+                    </li>
+                    
+                   <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn" class="collapse navbar-collapse">USERS</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index_form.html">Create</a>
+    <a href="search.html">Query</a>
+    <a href="displayform.php">View Users</a>
+    <a href="curldisplay.php">Other Website Users</a>
+  </div>
+</div>
+</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ </nav>
+
+ <script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Cold Stone Coffee</h1>
+                    <hr class="tagline-divider">
+                    <p>
+                        <small><strong>Hi
+                            Prof. Sinn and Rita</strong>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">THE BEST COFFEE IN THE WORLD
+                        <strong>Visit Us Now</strong>
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                    <hr class="visible-xs">
+                    <p>A one-of-a-kind destination where our rarest coffees are small-batch roasted, packaged and enjoyed. It may be a labor of love, but it's mostly love.Our coffee masters have distilled their years of tasting knowledge down to three simple questions to help you find a Cold Stone coffee you’re sure to love.</p>
+                    <p>We travel the world in search of great coffee. In the process, we discover beans so special and rare that we can’t wait to bring them home and share. Each of these small-lot coffees has its own story to tell, and we meticulously develop a signature roast for every one of them.</p>
+                    <p>It’s surprising how different brewing methods can enhance particular characteristics in your coffee. Let us help you unlock the full potential of your coffee—for the perfect cup every time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">OUR RAREST COFFEES, SMALL-BATCH ROASTED IN SEATTLE
+                        <strong>Coffee can be a powerful means of doing good</strong>
+                    </h2>
+                    <hr>
+                    <p>A beautiful, fully sustainable coffee that helps small-scale farmers improve their lives.</p>
+                    <p>Only the finest Fair Trade-certified coffees from small farm co-ops in Central America make it into our blend. Formerly known as Fair Trade.Year after year, these are the coffees our customers love best.Try them and see for yourself.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12 text-center">
+                    <p>Copyright © www.renup.org 2017</p>
+                    <p>Website developed by- Renu Parameswaran</p>
+                    <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa fa-facebook-square" style="font-size:36px;color:#3b5998">
+                    </i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin-square" style="font-size:36px;color:#0077B5">
+                    </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

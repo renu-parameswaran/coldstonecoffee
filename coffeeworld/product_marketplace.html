@@ -1,0 +1,45 @@
+<?php
+
+$servername = "iamvivek.ipagemysql.com";
+$username = "vivek";
+$password = "vivek123";
+$dbname = “vivek”; //dbname — which should be yours 
+
+// Create connection
+$conn = mysql_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+    echo 'dying in here-->';
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if (!mysql_select_db($dbname)) {
+    echo "Unable to select mydbname: " . mysql_error();
+    exit;
+}
+
+$sql = "SELECT * FROM Product where ProductId”; //query to get all products from your db
+$result = mysql_query($sql);
+
+if (!$result) {
+    echo "Could not successfully run query ($sql) from DB: " . mysql_error();
+    exit;
+}
+
+if (mysql_num_rows($result) == 0) {
+    echo "No rows found, nothing to print so am exiting";
+    exit;
+}
+
+$rows = array();
+while ($row = mysql_fetch_assoc($result)) {
+    $rows[] = $row;
+}
+header("Content-type:application/json");
+echo json_encode($rows); // json encode
+
+
+mysql_free_result($result);
+
+?>

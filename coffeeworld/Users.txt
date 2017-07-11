@@ -1,0 +1,6 @@
+Alfreds,(489)-456-7831,Germany
+Maria,(408)-678-9450,Mexico
+ErnstHandel,(465)-789-4532,Austria
+Islechris,(678)-905-4563,UK
+Remya,(234)-567-8901,Canada
+Magazzini,(435)-267-8901,Italy
